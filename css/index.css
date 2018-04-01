@@ -1,0 +1,84 @@
+nav ul.nav li.active a {
+    color: #e4141c;
+}
+
+article section[id^='S'] .container {
+    border-bottom: 1px dashed #CCC;
+}
+
+article section[id^='S']:last-child .container {
+    border-bottom: none;
+}
+
+article section[id^='S'] .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#S1 .ntTxt {
+    padding: 6px;
+}
+
+#S1 .rate {
+    margin-top: 10px;
+}
+
+#S2 .todoTxt {
+    padding: 6px;
+}
+
+#S2 ul.tabs {
+    margin-top: 10px;
+    font-size: 0;
+}
+
+#S2 ul.tabs li {
+    margin-right: 6px;
+    background-color: #D7D8D8;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: currentColor;
+    display: inline-block;
+}
+
+#S2 ul.tabs li.active {
+    background-color: grey;
+    color: white;
+}
+
+#S2 table.todo {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+#S2 table.todo th, 
+#S2 table.todo td {
+	padding: 6px 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#S2 table.todo tr {
+    background-color: #F2F3F3;
+}
+
+#S2 table.todo tr:nth-child(odd) {
+    background-color: #D7D8D8;
+}
+
+#S2 table.todo th {
+    background-color: #246DB6;
+    color: white;
+}
+
+#S2 table.todo td:first-child {
+    background-color: #B3E4FF;
+}
+
+#S2 table.todo tr.active {
+    text-decoration: line-through;
+}
+
+#S2 table.todo .del {
+    color: #e4141c;
+}

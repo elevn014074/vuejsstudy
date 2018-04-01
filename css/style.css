@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url(frame.css);
+/*-------------------------
+       L A Y O U T
+-------------------------*/
+.container {
+    position: relative;
+    width: 96%;
+    height: 100%;
+	max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/*-------------------------
+       H E A D E R
+-------------------------*/
+header {
+    background-color: #e4141c;
+}
+
+header section {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #CCC;
+}
+
+header h1 {
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+/*-------------------------
+        B U R G E R
+-------------------------*/
+.burger {
+    position: absolute;
+    width: 25px;
+    height: 22px;
+    top: 50%;
+    margin-top: -9px;
+    cursor: pointer;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -moz-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+}
+
+.burger span {
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -moz-transition: ease-in-out 0.25s;
+    -o-transition: ease-in-out 0.25s;
+    -webkit-transition: ease-in-out 0.25s;
+    transition: ease-in-out 0.25s;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+.burger span:nth-child(2) {
+    top: 7px;
+}
+.burger span:nth-child(3) {
+    top: 14px;
+}
+
+.burger.open span:nth-child(1) {
+    top: 7px;
+    width: 0%;
+    left: 50%;
+}
+.burger.open span:nth-child(2) {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 9px;
+}
+.burger.open span:nth-child(3) {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+/*-------------------------
+            N A V
+-------------------------*/
+nav section {
+    background-color: #CCC;
+}
+
+nav ul.nav li {
+    margin: 20px 0;
+    padding: 0 40px;
+    border-right: 2px solid white;
+    display: inline-block;
+}
+
+nav ul.nav li:last-child {
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        /* display: none; */
+    }
+
+    nav .container {
+        width: 100%;
+    }
+
+    nav ul.nav li {
+        margin: 0;
+        padding: 20px 40px;
+        border-bottom: 1px solid #444;
+        border-right: none;
+        display: block;
+    }
+}
+
+
+/*-------------------------
+     A R T I C L E
+-------------------------*/
+article .container {
+    padding: 40px 0;
+}
+
+
+/*-------------------------
+      F O O T E R
+-------------------------*/
+footer {
+    border-top: 2px solid #CCC;
+    text-align: center;
+}
+
+footer .container {
+    padding: 20px 0;
+}
